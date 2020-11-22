@@ -1,0 +1,141 @@
+<div class="container">
+    <h4 class="mb-3">Billing Address</h4>
+    <form novalidate="">
+        <div class="row g-3">
+            <div class="col-sm-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input id="firstName" type="text" class="form-control" placeholder="Dadi" required>
+                <div class="invalid-feedback">
+                    Valid first name in required
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input id="lastName" type="text" class="form-control" placeholder="Charisma" required>
+                <div class="invalid-feedback">
+                    Valid last name in required
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <label for="username" class="form-label">Username</label>
+                <div class="input-group">
+                    <span class="input-group-text">@</span>
+                    <input id="username" type="text" class="form-control" placeholder="dadichr" required>
+                </div>
+                <div class="invalid-feedback">
+                    Valid last name in required
+                </div>
+            </div>
+            <div class="col-md-5">
+                <label for="country" class="form-label">Country</label>
+                <select id="username" class="form-control">
+                    <option value="">Choose...</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Matraman">Matraman</option>
+                </select>
+                <div class="invalid-feedback">
+                    Valid last name in required
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="state" class="form-label">State</label>
+                <select id="username" class="form-control">
+                    <option value="">Choose...</option>
+                    <option value="Australia">WA</option>
+                    <option value="Indonesia">SA</option>
+                    <option value="Matraman">NT</option>
+                </select>
+                <div class="invalid-feedback">
+                    Valid last name in required
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="postcode" class="form-label">Postcode</label>
+                    <input id="postcode" type="number" class="form-control" placeholder="1234" required>
+                <div class="invalid-feedback">
+                    Valid last name in required
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input id="sameAddress" type="checkbox" class="form-check-input">
+                    <label class="form-check-label" for="sameAddress">Shipping address s the same as billing</label>
+                </div>
+                <div class="form-check">
+                    <input id="safeInfo" type="checkbox" class="form-check-input">
+                    <label class="form-check-label" for="safeInfo">Safe this info</label>
+                </div>
+
+                <hr class="my-4">
+
+                <h4 class="mb-3">Payments</h4>
+
+                <div class="form-check">
+                    <input id="creditCard" name="paymentMetod" type="radio" class="form-check-input" checked required>
+                    <label for="creditCard">Credit Card</label>
+                </div>
+
+                <div class="form-check">
+                    <input id="directDebit" name="paymentMetod" type="radio" class="form-check-input" checked required>
+                    <label for="directDebit">Direct Debit</label>
+                </div>
+
+                <div class="form-check">
+                    <input id="paypal" name="paymentMetod" type="radio" class="form-check-input" checked required>
+                    <label for="paypal">Paypal</label>
+                </div>
+            </div>
+
+            <div class="container row my-3 gy-3">
+                <div class="col-md-6">
+                    <label for="Fullname" class="form-label">
+                        Name on card
+                    </label>
+                    <input id="fullName" type="text" class="form-control">
+                    <small class="text-muted">Fullname as displayed on card.</small>
+                    <div class="invalid-feedback">
+                        Name on card  is required
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="cc-number" class="form-label">
+                        Credit Card Number
+                    </label>
+                    <input id="cc-number" type="text" class="form-control">
+                    <div class="invalid-feedback">
+                        Credit card number  is required
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="cc-expire" class="form-label">
+                        Expiration
+                    </label>
+                    <input id="cc-expire" type="text" class="form-control">
+                    <div class="invalid-feedback">
+                        Expiration is required.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">
+                        CVV
+                    </label>
+                    <input id="cc-expire" type="text" class="form-control">
+                    <div class="invalid-feedback">
+                        CVV is required.
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <button class="btn btn-primary btn-lg btn-block">
+                Continue to checkout
+            </button>
+
+        </div>
+    </form>
+</div>

@@ -1,0 +1,104 @@
+#carousel-item img {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bdparallax, .ftparallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bdparallax.slide-one {
+    background-image: url("/assets/images/venusflytrap-slider.jpg");
+    min-height: 670px;
+  }
+  .bdparallax.slide-two {
+    background-image: url("/assets/images/drosera-slider.jpg");
+    min-height: 670px;
+  }
+  .bdparallax.slide-three {
+    background-image: url("/assets/images/darlingtonia-slider.jpg");
+    min-height: 670px;
+  }
+  
+  .bdparallax {
+    background-image: url("/assets/images/venusflytrap-slider.jpg");
+    min-height: 400px;
+  }
+  
+  .ftparallax {
+    background-image: url("/assets/images/darlingtonia-slider.jpg");
+    min-height: 400px;
+  }
+  .bgparallax {
+    position: relative;
+  }
+  .bgparallax h3, .bgparallax p {
+    color: #fff;
+    text-align: center;
+  }
+  .bgparallaxfill {
+    color: #ddd;
+    background: #0b8c4c;
+    text-align: center;
+    padding: 50px 80px 65px;
+    text-align: center;
+  }
+  
+  .bgparallaxfill input[type="text"], .bgparallaxfill input[type="email"] {
+      background: transparent;
+      width: 350px;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      font-size: 16px;
+  }
+  
+  .bgparallaxfill input[type="submit"]:not(:disabled) {
+      background: #215139;
+      border: 1px solid #215139;
+      width: 270px;
+      color: #fff;
+      float: right;
+  }
+  
+  
+  
+  .bgparallaxfill input::placeholder {
+    color: #215139;
+  }
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption a:hover {
+      color: transparent;
+      text-decoration: underline;
+  }
+  
+  .caption span.titleparallax {
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    background: #215139;
+    color: #fff;
+  }
+  
+  .caption span.titleparallax:hover {
+      opacity: 0.6;
+  }
+  

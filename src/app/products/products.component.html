@@ -1,0 +1,41 @@
+<section class="section-bg">
+    <div class="container">
+       
+       <div class="row">
+           <div class="col-xl-12">
+               <div class="section-title">
+                   <h2>Products</h2>
+               </div>
+           </div>
+       </div>
+
+       <div class="row">
+
+           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6" *ngFor="let product of products">
+               <div class="single-product">
+                   <div class="product-thumb">
+                       <img src= "{{product.tumbnail}}" alt="" >
+                   </div>
+                   <div class="product-title">
+                       <h3><a>{{product.name_product}}</a></h3>
+                       <p><a>{{product.description}}</a></p>
+                   </div>
+                   <div class="product-btns">
+                       <a class="btn-small mr-2">${{product.price}}</a>
+                       <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                       <a href="#" class="btn-round"><i class="fa fa-heart"></i></a>
+                   </div>
+               </div>
+           </div>
+
+       </div>
+
+
+       <div class="row button-center">
+           <div class="col-xl-6 centered">
+               <a href="#" class="bttn-def"><span>Load more</span></a>
+           </div>
+       </div>
+
+    </div>
+</section>
